@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="637.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="pekarna.controller.LogiraniProdavacController">
+  <children>
+    <Button layoutX="511.0" layoutY="42.0" mnemonicParsing="false" onAction="#Odjava" text="ODJAVA" />
+    <Button fx:id="ispis" layoutX="248.0" layoutY="482.0" mnemonicParsing="false" onAction="#Potvrdi" prefHeight="33.0" prefWidth="132.0" text="Potvrdi" />
+    <Label id="jUkupno" layoutX="509.0" layoutY="389.0" prefWidth="65.0" text="UKUPNO:">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+    <TextField fx:id="jUkupno" layoutX="491.0" layoutY="417.0" minHeight="3.0" prefHeight="33.0" prefWidth="101.0" />
+    <Label fx:id="labelOperater" layoutX="67.0" layoutY="54.0" prefWidth="65.0" text="Operater" />
+    <Label layoutX="68.0" layoutY="108.0" prefWidth="28.0" text="ID" textFill="BLACK" />
+    <Label layoutX="65.0" layoutY="147.0" minHeight="4.0" prefHeight="16.0" text="Naziv" textFill="BLACK" />
+    <TextField id="jIdP" fx:id="jIdPP" layoutX="135.0" layoutY="103.0" prefWidth="51.0" />
+    <TextField id="jNazivP" fx:id="jNazivPP" layoutX="135.0" layoutY="140.0" prefWidth="124.0" />
+    <Button fx:id="narudzba" layoutX="359.0" layoutY="178.0" mnemonicParsing="false" onAction="#NaruciEnter" prefHeight="33.0" prefWidth="103.0" text="DODAJ" />
+    <ListView id="list" fx:id="lista" layoutX="70.0" layoutY="250.0" prefHeight="200.0" prefWidth="391.0" />
+    <Label layoutX="67.0" layoutY="184.0" text="Količina" />
+    <TextField fx:id="jKolicinaPP" layoutX="135.0" layoutY="177.0" prefWidth="74.0" />
+    <TextField id="jUsername" fx:id="ime_operater" layoutX="135.0" layoutY="49.0" prefWidth="200.0" />
+    
+    <Label fx:id="labela1" layoutX="432.0" layoutY="116.0" minHeight="4.0" prefHeight="22.0" prefWidth="153.0" text="" />
+      <Label layoutX="91.0" layoutY="222.0" text="ID" />
+      <Label layoutX="171.0" layoutY="222.0" text="Naziv" />
+      <Label layoutX="248.0" layoutY="222.0" text="Cijena" />
+      <Label layoutX="314.0" layoutY="222.0" text="Količina" />
+      <Label layoutX="394.0" layoutY="222.0" text="Iznos" />
+  </children>
+  <stylesheets>
+    <URL value="@logiraniProdavac.css" />
+  </stylesheets>
+</AnchorPane>
